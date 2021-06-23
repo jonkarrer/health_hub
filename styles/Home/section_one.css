@@ -2,6 +2,7 @@ section.one {
   position: relative;
   max-width: var(--std-max_width);
   height: 100vh;
+  min-height: 660px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -35,12 +36,11 @@ section.one article {
   margin-left: var(--std-margin);
 }
 section.one article h1 {
-  font-size: 72px;
+  font-size: var(--lg);
   color: var(--heading);
 }
 section.one article p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: var(--sm);
   color: var(--paragraph);
 }
 section.one button {
@@ -48,12 +48,11 @@ section.one button {
 }
 
 /****** Mobile ******/
-@media (min-width: 400px) { 
- 
+@media (min-width: 400px) {
 }
 
 /****** X Small ******/
-@media (min-width: 500px) { 
+@media (min-width: 500px) {
   section.one article {
     margin: auto;
     width: 90%;
@@ -63,14 +62,14 @@ section.one button {
 }
 
 /****** Small ******/
-@media (min-width: 640px) { 
+@media (min-width: 640px) {
   section.one article {
     width: 550px;
   }
 }
 
 /****** Medium ******/
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   section.one article {
     background: var(--article_background);
     margin: 0;
@@ -89,12 +88,12 @@ section.one button {
     margin: 0;
     margin-left: var(--std-margin);
   }
- }
+}
 
 /****** X Large ******/
 @media (min-width: 1280px) {
- }
+}
 
 /****** 2X Large ******/
-@media (min-width: 1536px) { 
+@media (min-width: 1536px) {
 }

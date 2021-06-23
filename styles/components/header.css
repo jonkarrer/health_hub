@@ -21,13 +21,23 @@ header {
 }
 header .logo {
   width: 50px;
+  cursor: pointer;
 }
 header nav a {
   font-size: 24px;
   margin-left: 35px;
+  cursor: pointer;
 }
 header .login {
   width: 150px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+header .switch {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 header .header_wave {
   position: absolute;
