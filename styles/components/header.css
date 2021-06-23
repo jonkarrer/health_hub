@@ -1,0 +1,38 @@
+header {
+  background: var(--navbar);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  padding-top: 10px;
+}
+.header-interior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding-left: var(--std-padding);
+  padding-right: var(--std-padding);
+  max-width: var(--std-max_width);
+}
+.header-links {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  width: 50px;
+}
+header nav a {
+  font-size: 24px;
+  margin-left: 35px;
+}
+.header_wave {
+  position: absolute;
+  top: 60px;
+  width: 100vw;
+  height: 8vw;
+  background-image: url('../../assets/navbar_wave.svg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+}

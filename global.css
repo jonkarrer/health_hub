@@ -1,0 +1,52 @@
+@import url('./styles/components/header.css');
+@import url('./styles/components/button.css');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fffffe;
+  --heading: #272343;
+  --paragraph: #2d334a;
+  --button: #ffd803;
+  --button_text: #272343;
+  --lt-highlight: #ffd803;
+  --lt-main: #fffffe;
+  --lt-secondary: #e3f6f5;
+  --lt-tertiary: #bae8e8;
+  --navbar: #add2c7;
+
+  --dk-background: #004643;
+  --dk-headline: #fffffe;
+  --dk-paragraph: #abd1c6;
+  --dk-button: #f9bc60;
+  --dk-button_text: #001e1d;
+  --dk-highlight: #f9bc60;
+  --dk-main: #e8e4e6;
+  --dk-secondary: #abd1c6;
+  --dk-tertiary: #e16162;
+  --dk-navbar: #add2c7;
+
+  --std-margin: 75px;
+  --std-padding: 6%;
+  --std-max_width: 1800px;
+}
+
+html {
+  background: var(--background);
+}
+/*Mobile*/
+@media (min-width: 400px) { }
+/*Xs*/
+@media (min-width: 500px) { }
+/*Sm*/
+@media (min-width: 640px) { }
+/*Md*/
+@media (min-width: 768px) { }
+/*Lg*/
+@media (min-width: 1024px) { }
+/*Xl*/
+@media (min-width: 1280px) { }
+/*2xl*/
+@media (min-width: 1536px) { }
