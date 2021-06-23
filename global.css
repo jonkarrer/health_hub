@@ -16,6 +16,7 @@
   --lt-secondary: #e3f6f5;
   --lt-tertiary: #bae8e8;
   --navbar: #add2c7;
+  --article_background: hsla(37, 57%, 97%, 0.9);
 
   --dk-background: #004643;
   --dk-headline: #fffffe;
@@ -27,7 +28,8 @@
   --dk-secondary: #abd1c6;
   --dk-tertiary: #e16162;
   --dk-navbar: #add2c7;
-
+  --dk-article_background: hsla(0, 5%, 20%, 0.9);
+  
   --std-margin: 75px;
   --std-padding: 6%;
   --std-max_width: 1800px;

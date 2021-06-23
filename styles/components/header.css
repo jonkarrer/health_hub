@@ -26,7 +26,10 @@ header nav a {
   font-size: 24px;
   margin-left: 35px;
 }
-.header_wave {
+header .login {
+  width: 150px;
+}
+header .header_wave {
   position: absolute;
   top: 60px;
   width: 100vw;
