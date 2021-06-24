@@ -4,7 +4,6 @@ section.two {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: white;
 }
 section.two .icons_wrapper {
   width: 70%;
@@ -17,6 +16,7 @@ section.two .icons_wrapper div {
   display: grid;
   place-items: center;
   gap: 15px;
+  color: var(--heading);
 }
 section.two .icons_wrapper div p {
   width: 70%;
@@ -33,15 +33,24 @@ section.two .image-wrapper {
   background-repeat: no-repeat;
   height: 40%;
 }
-section.two .image-wrapper .header_wave {
+section.two .image-wrapper .top_wave {
   position: absolute;
   top: 0;
   width: 100%;
   height: 8vw;
-  background-image: url("../../assets/nav_wave_white.svg");
+  background-image: url("../../assets/nav_wave/white.svg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+}
+section.two .image-wrapper .bottom_wave {
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 40%;
+  background-image: url("../../assets/nav_wave/bottoms-4/purple.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section.two .image-wrapper .overlay {
   height: 100%;
@@ -56,4 +65,8 @@ section.two .image-wrapper .overlay button {
   margin: auto;
   margin-top: 35px;
   color: black;
+}
+section.three {
+  background: #272343;
+  height: 100vh;
 }

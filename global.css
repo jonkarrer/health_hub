@@ -33,7 +33,6 @@
   --dk-main: #e8e4e6;
   --dk-secondary: #abd1c6;
   --dk-tertiary: #e16162;
-  --dk-navbar: #add2c7;
   --dk-article_background: hsla(0, 5%, 20%, 0.9);
 
   --std-margin: 75px;
@@ -46,7 +45,9 @@ html {
 }
 p {
   line-height: 1.6;
+  color: var(--paragraph);
 }
+
 /*Mobile*/
 @media (min-width: 400px) {
 }

@@ -6,3 +6,6 @@
   color: var(--button-text);
   font-size: 16px;
 }
+.btn:hover {
+  cursor: pointer;
+}
