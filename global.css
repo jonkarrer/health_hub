@@ -16,10 +16,12 @@
   --lt-secondary: #e3f6f5;
   --lt-tertiary: #bae8e8;
   --navbar: #add2c7;
+  --border: "#272343";
   --article_background: hsla(37, 57%, 97%, 0.9);
 
   /*Fonts*/
   --sm: 1.2rem;
+  --md: 2rem;
   --lg: 4rem;
 
   --dk-background: #004643;

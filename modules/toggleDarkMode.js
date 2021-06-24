@@ -21,4 +21,4 @@ function toggleDarkMode() {
   }
 }
 
-export {darkMode, toggleDarkMode};
+export { toggleDarkMode };
