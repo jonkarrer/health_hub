@@ -1,0 +1,50 @@
+section.features {
+  z-index: 2;
+  padding-top: var(--mobile-padding-y);
+}
+section.features .icons_wrapper {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  gap: 80px;
+}
+section.features .icons_wrapper div {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 15px;
+  color: var(--heading);
+}
+section.features img {
+  width: 120px;
+}
+section.features p {
+  width: 70%;
+}
+
+section.three {
+  background: #272343;
+  height: 100vh;
+}
+/*Md*/
+@media (min-width: 768px) {
+  section.features {
+    padding-top: 100px;
+  }
+  section.features .icons_wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  section.features h2 {
+    font-size: var(--md);
+  }
+  section.features .icons_wrapper div p {
+    font-size: var(--sm);
+  }
+  section.features .plant,
+  section.features .budget,
+  section.features .chef {
+    width: 140px;
+  }
+}

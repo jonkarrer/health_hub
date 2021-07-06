@@ -1,0 +1,74 @@
+@import url("../../animations/pulse.css");
+
+section.splash {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+section.splash .food_heart {
+  position: absolute;
+  top: 150px;
+  right: -120px;
+  width: 52vw;
+  min-width: 600px;
+  animation: pulse;
+  animation-iteration-count: 3;
+  animation-duration: 2000ms;
+  z-index: -1;
+  animation-timing-function: linear;
+}
+section.splash article {
+  width: 95%;
+  max-width: 500px;
+  background: var(--article_background);
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+}
+section.splash article h1 {
+  font-size: var(--lg);
+  color: var(--heading);
+}
+section.splash article p {
+  font-size: var(--sm);
+  color: var(--paragraph);
+}
+section.splash button {
+  cursor: pointer;
+}
+
+/****** Medium ******/
+@media (min-width: 768px) {
+  section.splash {
+    display: flex;
+    align-items: center;
+  }
+  section.splash article {
+    margin-left: var(--std-margin);
+    margin-top: 30px;
+    background: none;
+    margin-top: 30px;
+    width: 600px;
+  }
+  section.splash article h1 {
+    font-size: var(--xl);
+  }
+  section.splash article p {
+    font-size: var(--base);
+  }
+}
+
+/****** Large ******/
+@media (min-width: 1024px) {
+}
+
+/****** X Large ******/
+@media (min-width: 1280px) {
+}
+
+/****** 2X Large ******/
+@media (min-width: 1536px) {
+}

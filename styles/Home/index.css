@@ -1,5 +1,3 @@
-@import url("./section_one.css");
-@import url("./section_two.css");
-body {
-  overflow-x: hidden;
-}
+@import url("./sections/splash.css");
+@import url("./sections/features.css");
+@import url("./sections/food_wave.css");

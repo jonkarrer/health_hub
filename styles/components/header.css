@@ -1,36 +1,31 @@
 header {
-  background: var(--navbar);
   position: fixed;
   top: 0;
   z-index: 1;
+  background: var(--navbar);
   width: 100vw;
-  padding-top: 10px;
 }
-.header-interior {
+header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding-left: var(--std-padding);
-  padding-right: var(--std-padding);
-  max-width: var(--std-max_width);
+  padding: 0 var(--std-padding);
 }
-.header-links {
+header .links {
   display: flex;
   align-items: center;
 }
 header .logo {
-  width: 50px;
+  width: 60px;
   cursor: pointer;
 }
-header nav a {
-  font-size: 24px;
-  margin-left: 35px;
-  cursor: pointer;
+header nav {
+  display: none;
 }
 header .login {
-  width: 150px;
-  margin-left: 35px;
+  width: 100px;
+  margin-left: 20px;
   cursor: pointer;
 }
 header .switch {
@@ -48,4 +43,19 @@ header .header_wave {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+}
+/*Md*/
+@media (min-width: 768px) {
+  header nav {
+    display: block;
+  }
+  header nav a {
+    font-size: 24px;
+    margin-left: 35px;
+    cursor: pointer;
+  }
+  header .login {
+    width: 150px;
+    margin-left: 35px;
+  }
 }

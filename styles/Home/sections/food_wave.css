@@ -1,0 +1,57 @@
+section.food_wave {
+  position: relative;
+  background-image: url("../../../assets/section_2_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+section.food_wave .top_wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 8vw;
+  background-image: url("../../../assets/nav_wave/white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+section.food_wave .bottom_wave {
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 40%;
+  background-image: url("../../../assets/nav_wave/bottoms-4/purple.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.food_wave .overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  text-align: center;
+  color: white;
+  font-size: var(--sm);
+  padding: 20px;
+}
+section.food_wave .overlay button {
+  width: 40%;
+  margin: auto;
+  color: black;
+}
+
+/*Md*/
+@media (min-width: 768px) {
+  section.food_wave {
+    height: 400px;
+    margin-top: 100px;
+  }
+  section.food_wave .overlay {
+    gap: 30px;
+    place-content: center;
+    text-align: center;
+    color: white;
+    font-size: var(--base);
+  }
+}
