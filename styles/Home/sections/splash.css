@@ -2,18 +2,18 @@
 
 section.splash {
   position: relative;
-  height: 100vh;
-  min-height: 700px;
+  height: clamp(700px, 100vh, var(--std-max_height));
   overflow: hidden;
   display: flex;
   align-items: center;
+
+  margin: auto;
 }
 section.splash .food_heart {
   position: absolute;
   top: 150px;
   right: -120px;
-  width: 52vw;
-  min-width: 600px;
+  width: clamp(600px, 52vw, 1400px);
   animation: pulse;
   animation-iteration-count: 3;
   animation-duration: 2000ms;
@@ -42,16 +42,10 @@ section.splash button {
 
 /****** Medium ******/
 @media (min-width: 768px) {
-  section.splash {
-    display: flex;
-    align-items: center;
-  }
   section.splash article {
     margin-left: var(--std-margin);
     margin-top: 30px;
-    background: none;
-    margin-top: 30px;
-    width: 600px;
+    max-width: 600px;
   }
   section.splash article h1 {
     font-size: var(--xl);
@@ -61,14 +55,27 @@ section.splash button {
   }
 }
 
-/****** Large ******/
+/*Lg*/
 @media (min-width: 1024px) {
+  section.splash article {
+    background: none;
+  }
 }
 
-/****** X Large ******/
-@media (min-width: 1280px) {
-}
-
-/****** 2X Large ******/
+/*2xl*/
 @media (min-width: 1536px) {
+  section.splash {
+    min-height: 900px;
+  }
+  section.splash article {
+    margin-left: var(--std-margin);
+    margin-top: 60px;
+    max-width: 800px;
+  }
+  section.splash article h1 {
+    font-size: var(--xxl);
+  }
+  section.splash article p {
+    font-size: var(--reg);
+  }
 }

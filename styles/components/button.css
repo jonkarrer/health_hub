@@ -4,8 +4,24 @@
   background: var(--button);
   padding: 8px 10px;
   color: var(--button-text);
-  font-size: 16px;
+  font-size: var(--xs);
 }
 .btn:hover {
   cursor: pointer;
+}
+
+/*Md*/
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 10px;
+    font-size: var(--sm);
+  }
+}
+
+/*2xl*/
+@media (min-width: 1536px) {
+  .btn {
+    padding: 10px 10px;
+    font-size: var(--base);
+  }
 }

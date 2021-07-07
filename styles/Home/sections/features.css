@@ -26,25 +26,44 @@ section.three {
   background: #272343;
   height: 100vh;
 }
+
 /*Md*/
 @media (min-width: 768px) {
   section.features {
-    padding-top: 100px;
+    padding: 100px 0;
   }
   section.features .icons_wrapper {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
   }
+  section.features img {
+    width: 140px;
+  }
   section.features h2 {
     font-size: var(--md);
   }
-  section.features .icons_wrapper div p {
+  section.features p {
     font-size: var(--sm);
   }
-  section.features .plant,
-  section.features .budget,
-  section.features .chef {
-    width: 140px;
+}
+
+/*2xl*/
+@media (min-width: 1536px) {
+  section.features {
+    padding: 150px 0;
+  }
+  section.features img {
+    width: 200px;
+  }
+  section.features h2 {
+    font-size: var(--reg);
+  }
+  section.features p {
+    font-size: var(--base);
+  }
+  section.features .icons_wrapper div {
+    gap: 25px;
+    color: var(--heading);
   }
 }

@@ -20,12 +20,14 @@
   --article_background: hsla(37, 57%, 97%, 0.9);
 
   /*Fonts*/
+  --xs: 1rem;
   --sm: 1.2rem;
   --base: 1.5rem;
   --md: 2rem;
   --reg: 2.5rem;
   --lg: 3rem;
-  --xl: 3.5rem;
+  --xl: 4rem;
+  --xxl: 5.2rem;
 
   --dk-background: #004643;
   --dk-headline: #fffffe;
@@ -41,7 +43,8 @@
   --std-margin: 75px;
   --std-padding: 6%;
   --std-wrapper-width: 90%;
-  --std-max_width: 2500px;
+  --std-max_width: 2200px;
+  --std-max_height: 1500px;
 
   --mobile-wrapper-width: 95%;
   --mobile-padding-y: 40px;
@@ -49,6 +52,10 @@
 
 html {
   background: var(--background);
+}
+section {
+  max-width: var(--std-max_width);
+  margin: auto;
 }
 p {
   line-height: 1.6;

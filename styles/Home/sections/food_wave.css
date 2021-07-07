@@ -45,7 +45,6 @@ section.food_wave .overlay button {
 @media (min-width: 768px) {
   section.food_wave {
     height: 400px;
-    margin-top: 100px;
   }
   section.food_wave .overlay {
     gap: 30px;
@@ -53,5 +52,16 @@ section.food_wave .overlay button {
     text-align: center;
     color: white;
     font-size: var(--base);
+  }
+}
+
+/*2xl*/
+@media (min-width: 1536px) {
+  section.food_wave {
+    height: 600px;
+  }
+  section.food_wave .overlay {
+    gap: 40px;
+    font-size: var(--reg);
   }
 }
