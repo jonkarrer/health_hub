@@ -5,8 +5,9 @@ document
   .addEventListener("click", () => toggleDarkMode());
 
 document.querySelectorAll(".flipButton").forEach((item) => {
+  const card = item.parentElement.parentElement;
   item.addEventListener("click", () => {
-    const card = document.querySelector(".card");
+    console.log(card);
     card.classList.toggle("is-flipped");
   });
 });

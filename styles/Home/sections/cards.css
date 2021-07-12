@@ -1,9 +1,10 @@
 section.cards {
   background-color: var(--button_text);
+  padding: var(--mobile-padding-y) 0;
 }
 section.cards .wrapper {
   display: grid;
-  gap: 15px;
+  gap: 60px;
 }
 section.cards .scene {
   height: 400px;

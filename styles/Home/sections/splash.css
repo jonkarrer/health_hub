@@ -2,7 +2,8 @@
 
 section.splash {
   position: relative;
-  height: clamp(600px, 100vh, var(--std-max_height));
+  height: 100vh;
+  min-height: 600px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -13,7 +14,8 @@ section.splash .food_heart {
   position: absolute;
   top: 150px;
   right: -120px;
-  width: clamp(600px, 52vw, 1400px);
+  width: 52vw;
+  min-width: 600px;
   animation: pulse;
   animation-iteration-count: 3;
   animation-duration: 2000ms;
@@ -70,6 +72,10 @@ section.splash button {
 @media (min-width: 1536px) {
   section.splash {
     min-height: 900px;
+    max-height: var(--std-max_height);
+  }
+  section.spalsh .food_heart {
+    max-width: 1400px;
   }
   section.splash article {
     margin-left: var(--std-margin);
