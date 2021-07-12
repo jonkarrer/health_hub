@@ -10,7 +10,7 @@ header .wrapper {
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 0 var(--std-padding);
+  padding: 0 var(--std-padding-x);
 }
 header .links {
   display: flex;

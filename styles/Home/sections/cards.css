@@ -1,18 +1,18 @@
 section.cards {
   background-color: var(--button_text);
   padding: var(--mobile-padding-y) 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section.cards .wrapper {
   display: grid;
   gap: 60px;
+  width: var(--mobile-wrapper-width);
 }
 section.cards .scene {
-  height: 400px;
-  width: 300px;
-  background: grey;
   margin: auto;
-  display: grid;
-  place-content: center;
   perspective: 1000px;
 }
 section.cards .card {
@@ -21,6 +21,7 @@ section.cards .card {
   position: relative;
   height: 400px;
   width: 300px;
+  font-size: var(--md);
 }
 section.cards .card_face {
   position: absolute;
@@ -29,20 +30,80 @@ section.cards .card_face {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  border-radius: 1rem;
 }
 section.cards .front {
-  background: red;
+  background: var(--navbar);
+  display: grid;
+  place-items: center;
+  gap: 30px;
   display: grid;
   place-content: center;
 }
 section.cards .back {
-  background: blue;
-  color: white;
+  background: var(--lt-tertiary);
   transform: rotateY(180deg);
 }
 section.cards .card.is-flipped {
   transform: rotateY(180deg);
 }
 section.cards img {
-  width: 50px;
+  width: 120px;
+  margin: auto;
+}
+section.cards button {
+  width: 120px;
+}
+
+/*Lg*/
+@media (min-width: 1024px) {
+  section.cards {
+    padding: var(--std-padding-y) 0;
+    min-height: 600px;
+  }
+  section.cards .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    width: var(--std-max_width);
+  }
+  section.cards .card {
+    height: 450px;
+    width: 30vw;
+    max-width: 350px;
+    font-size: var(--reg);
+  }
+  section.cards .front {
+    gap: 40px;
+  }
+  section.cards img {
+    width: 150px;
+  }
+  section.cards button {
+    width: 160px;
+  }
+}
+
+/*2xl*/
+@media (min-width: 1536px) {
+  section.cards {
+    padding: var(--std-padding-y) 0;
+    min-height: 1100px;
+  }
+  section.cards .card {
+    height: 700px;
+    width: 30vw;
+    max-width: 550px;
+    font-size: var(--xl);
+  }
+  section.cards .front {
+    gap: 60px;
+  }
+  section.cards img {
+    width: 250px;
+  }
+  section.cards button {
+    width: 220px;
+    font-size: var(--md);
+  }
 }
