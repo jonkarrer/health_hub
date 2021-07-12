@@ -2,11 +2,11 @@
 
 section.splash {
   position: relative;
-  height: clamp(700px, 100vh, var(--std-max_height));
+  height: clamp(600px, 100vh, var(--std-max_height));
   overflow: hidden;
   display: flex;
   align-items: center;
-
+  justify-content: center;
   margin: auto;
 }
 section.splash .food_heart {
@@ -40,8 +40,12 @@ section.splash button {
   cursor: pointer;
 }
 
-/****** Medium ******/
+/*Md*/
 @media (min-width: 768px) {
+  section.splash {
+    align-items: center;
+    justify-content: inherit;
+  }
   section.splash article {
     margin-left: var(--std-margin);
     margin-top: 30px;

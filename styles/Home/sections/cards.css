@@ -1,0 +1,47 @@
+section.cards {
+  background-color: var(--button_text);
+}
+section.cards .wrapper {
+  display: grid;
+  gap: 15px;
+}
+section.cards .scene {
+  height: 400px;
+  width: 300px;
+  background: grey;
+  margin: auto;
+  display: grid;
+  place-content: center;
+  perspective: 1000px;
+}
+section.cards .card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 400px;
+  width: 300px;
+}
+section.cards .card_face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+section.cards .front {
+  background: red;
+  display: grid;
+  place-content: center;
+}
+section.cards .back {
+  background: blue;
+  color: white;
+  transform: rotateY(180deg);
+}
+section.cards .card.is-flipped {
+  transform: rotateY(180deg);
+}
+section.cards img {
+  width: 50px;
+}
