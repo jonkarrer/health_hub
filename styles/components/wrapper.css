@@ -1,0 +1,10 @@
+.wrapper {
+  width: 95%;
+}
+
+/*Md*/
+@media (min-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+}

@@ -1,0 +1,10 @@
+section.info {
+  min-height: 100vh;
+  position: relative;
+}
+section.info .wrapper {
+  display: flex;
+}
+section.info .top_wave {
+  background-image: url("../../../assets/nav_wave/top_purple.svg");
+}

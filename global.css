@@ -1,5 +1,8 @@
 @import url("./styles/components/header.css");
 @import url("./styles/components/button.css");
+@import url("./styles/components/wave.css");
+@import url("./styles/components/wrapper.css");
+@import url("./styles/components/section.css");
 * {
   margin: 0;
   box-sizing: border-box;
@@ -40,22 +43,15 @@
   --dk-tertiary: #e16162;
   --dk-article_background: hsla(0, 5%, 20%, 0.9);
 
-  --std-wrapper-width: 90%;
   --std-max_width: 2200px;
   --std-max_height: 1500px;
+
   --std-padding-y: 80px;
   --std-padding-x: 6%;
-
-  --mobile-wrapper-width: 95%;
-  --mobile-padding-y: 60px;
 }
 
 html {
   background: var(--background);
-}
-section {
-  max-width: var(--std-max_width);
-  margin: auto;
 }
 p {
   line-height: 1.6;

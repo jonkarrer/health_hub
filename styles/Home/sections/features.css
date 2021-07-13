@@ -1,14 +1,12 @@
 section.features {
   z-index: 2;
-  padding: var(--mobile-padding-y) 0;
 }
-section.features .icons_wrapper {
-  width: 95%;
+section.features .wrapper {
   margin: auto;
   display: grid;
   gap: 80px;
 }
-section.features .icons_wrapper div {
+section.features .wrapper div {
   text-align: center;
   display: grid;
   place-items: center;
@@ -27,7 +25,7 @@ section.features p {
   section.features {
     padding: 100px 0;
   }
-  section.features .icons_wrapper {
+  section.features .wrapper {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -45,9 +43,6 @@ section.features p {
 
 /*2xl*/
 @media (min-width: 1536px) {
-  section.features {
-    padding: 150px 0;
-  }
   section.features img {
     width: 200px;
   }
@@ -57,7 +52,7 @@ section.features p {
   section.features p {
     font-size: var(--base);
   }
-  section.features .icons_wrapper div {
+  section.features .wrapper div {
     gap: 25px;
     color: var(--heading);
   }

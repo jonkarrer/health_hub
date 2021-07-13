@@ -1,15 +1,14 @@
 section.cards {
   background-color: var(--button_text);
-  padding: var(--mobile-padding-y) 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 section.cards .wrapper {
   display: grid;
   gap: 60px;
-  width: var(--mobile-wrapper-width);
 }
 section.cards .scene {
   margin: auto;
@@ -22,6 +21,7 @@ section.cards .card {
   height: 400px;
   width: 300px;
   font-size: var(--md);
+  border-radius: 1rem;
 }
 section.cards .card_face {
   position: absolute;
@@ -54,18 +54,12 @@ section.cards img {
 section.cards button {
   width: 120px;
 }
-
 /*Lg*/
 @media (min-width: 1024px) {
-  section.cards {
-    padding: var(--std-padding-y) 0;
-    min-height: 600px;
-  }
   section.cards .wrapper {
     display: flex;
     justify-content: space-between;
     gap: 0;
-    width: var(--std-max_width);
   }
   section.cards .card {
     height: 450px;
@@ -86,10 +80,6 @@ section.cards button {
 
 /*2xl*/
 @media (min-width: 1536px) {
-  section.cards {
-    padding: var(--std-padding-y) 0;
-    min-height: 1100px;
-  }
   section.cards .card {
     height: 700px;
     width: 30vw;
