@@ -13,7 +13,7 @@
 /*Md*/
 @media (min-width: 768px) {
   .btn {
-    padding: 10px 10px;
+    padding: 6px 8px;
     font-size: var(--sm);
   }
 }
@@ -21,7 +21,6 @@
 /*2xl*/
 @media (min-width: 1536px) {
   .btn {
-    padding: 10px 10px;
     font-size: var(--base);
   }
 }

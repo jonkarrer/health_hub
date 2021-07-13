@@ -22,16 +22,6 @@
   --border: "#272343";
   --article_background: hsla(37, 57%, 97%, 0.9);
 
-  /*Fonts*/
-  --xs: 1rem;
-  --sm: 1.2rem;
-  --base: 1.5rem;
-  --md: 2rem;
-  --reg: 2.5rem;
-  --lg: 3rem;
-  --xl: 4rem;
-  --xxl: 5.2rem;
-
   --dk-background: #004643;
   --dk-headline: #fffffe;
   --dk-paragraph: #abd1c6;
@@ -43,15 +33,29 @@
   --dk-tertiary: #e16162;
   --dk-article_background: hsla(0, 5%, 20%, 0.9);
 
+  /*Fonts*/
+  --xs: 1rem;
+  --sm: 1.2rem;
+  --base: 1.5rem;
+  --md: 2rem;
+  --reg: 2.5rem;
+  --lg: 3rem;
+  --xl: 4rem;
+  --xxl: 5.2rem;
+
   --std-max_width: 2200px;
   --std-max_height: 1500px;
-
-  --std-padding-y: 80px;
-  --std-padding-x: 6%;
 }
 
 html {
   background: var(--background);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--heading);
 }
 p {
   line-height: 1.6;

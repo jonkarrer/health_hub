@@ -1,5 +1,6 @@
 section {
   max-width: var(--std-max_width);
+  max-height: var(--std-max_height);
   padding: 60px 0;
   margin: auto;
 }

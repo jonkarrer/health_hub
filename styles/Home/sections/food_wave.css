@@ -4,6 +4,7 @@ section.food_wave {
   background-size: cover;
   background-repeat: no-repeat;
   height: 250px;
+  padding: 0;
 }
 section.food_wave .top_wave {
   background-image: url("../../../assets/nav_wave/white.svg");
@@ -17,12 +18,14 @@ section.food_wave .overlay {
   display: grid;
   gap: 20px;
   place-content: center;
-  text-align: center;
-  color: white;
-  font-size: var(--sm);
   padding: 20px;
 }
-section.food_wave .overlay button {
+section.food_wave h1 {
+  text-align: center;
+  color: white;
+  font-size: var(--base);
+}
+section.food_wave button {
   width: 40%;
   margin: auto;
   color: black;
@@ -31,14 +34,15 @@ section.food_wave .overlay button {
 /*Md*/
 @media (min-width: 768px) {
   section.food_wave {
-    height: 400px;
+    height: 420px;
   }
   section.food_wave .overlay {
     gap: 30px;
     place-content: center;
-    text-align: center;
-    color: white;
     font-size: var(--base);
+  }
+  section.food_wave h1 {
+    font-size: var(--reg);
   }
 }
 

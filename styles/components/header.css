@@ -10,7 +10,6 @@ header .wrapper {
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 0 var(--std-padding-x);
 }
 header .links {
   display: flex;
@@ -56,29 +55,27 @@ header .header_wave {
     cursor: pointer;
   }
   header .login {
-    width: 150px;
-    margin-left: 35px;
+    width: 130px;
   }
 }
 
 /*2xl*/
 @media (min-width: 1536px) {
   header .logo {
-    width: 100px;
+    width: 80px;
     cursor: pointer;
   }
   header nav a {
-    font-size: var(--reg);
+    font-size: var(--base);
     margin-left: 35px;
     cursor: pointer;
   }
   header .login {
     width: 150px;
-    margin-left: 35px;
   }
   header .header_wave {
     position: absolute;
-    top: 100px;
-    height: 6vw;
+    top: 78px;
+    height: 5vw;
   }
 }
