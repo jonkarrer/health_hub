@@ -1,0 +1,47 @@
+section.banner {
+  height: 30vh;
+  background: #2d334a;
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding-bottom: 30vh;
+  gap: 15px;
+}
+section.banner h1 {
+  font-size: var(--reg);
+  background: -webkit-linear-gradient(top right, var(--button), var(--navbar));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.banner a {
+  font-size: var(--base);
+  color: white;
+  text-decoration: none;
+  background: -webkit-linear-gradient(top right, var(--button), var(--navbar));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: white solid thin;
+  padding: 4px 10px;
+}
+section.banner .top_wave {
+  background-image: url("../../../assets/nav_wave/white.svg");
+}
+section.banner .bottom_wave {
+  background-image: url("../../../assets/nav_wave/navbar_wave.svg");
+  transform: rotate(180deg);
+}
+
+/*Md*/
+@media (min-width: 768px) {
+  section.banner {
+    gap: 20px;
+  }
+  section.banner h1 {
+    font-size: var(--xl);
+  }
+  section.banner a {
+    font-size: var(--base);
+  }
+}

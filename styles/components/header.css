@@ -4,6 +4,7 @@ header {
   z-index: 1;
   background: var(--navbar);
   width: 100vw;
+  display: none;
 }
 header .wrapper {
   display: flex;
@@ -46,6 +47,9 @@ header .header_wave {
 
 /*Md*/
 @media (min-width: 768px) {
+  header {
+    display: block;
+  }
   header nav {
     display: block;
   }
@@ -55,7 +59,8 @@ header .header_wave {
     cursor: pointer;
   }
   header .login {
-    width: 130px;
+    width: 100px;
+    font-size: var(--xs);
   }
 }
 

@@ -4,6 +4,7 @@ function toggleDarkMode() {
   const root = document.documentElement;
   const top_wave_home = document.getElementById("top-wave_home-sect-two");
   const infoWave = document.querySelector("section.info .bottom_wave");
+  const footerWave = document.querySelector("section.banner .top_wave");
   if (darkMode) {
     //Change to light mode styles
     root.style.setProperty("--background", "#fffffe");
@@ -13,6 +14,7 @@ function toggleDarkMode() {
     //Refactor
     top_wave_home.style.backgroundImage = `url("../../assets/nav_wave/white.svg")`;
     infoWave.style.backgroundImage = `url("../../assets/nav_wave/bottoms/white.svg")`;
+    footerWave.style.backgroundImage = `url("../../assets/nav_wave/white.svg")`;
     darkMode = false;
     return;
   } else {
@@ -24,6 +26,7 @@ function toggleDarkMode() {
     //Refactor
     top_wave_home.style.backgroundImage = `url("../../assets/nav_wave/dark_green.svg")`;
     infoWave.style.backgroundImage = `url("../../assets/nav_wave/bottoms/dark_green.svg")`;
+    footerWave.style.backgroundImage = `url("../../assets/nav_wave/dark_green.svg")`;
     darkMode = true;
     return;
   }

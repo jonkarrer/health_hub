@@ -81,8 +81,8 @@ section.cards button {
 /*2xl*/
 @media (min-width: 1536px) {
   section.cards .card {
-    height: 700px;
-    width: 30vw;
+    height: 660px;
+    width: 28vw;
     max-width: 500px;
     font-size: var(--xl);
   }
