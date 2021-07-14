@@ -53,6 +53,8 @@ section.food_wave button {
   }
   section.food_wave .overlay {
     gap: 40px;
-    font-size: var(--reg);
+  }
+  section.food_wave h1 {
+    font-size: var(--lg);
   }
 }

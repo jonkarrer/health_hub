@@ -1,0 +1,86 @@
+@import url("../../animations/rotate.css");
+
+section.bowls .wrapper {
+  display: grid;
+  gap: 100px;
+}
+section.bowls .container {
+  display: grid;
+  place-items: center;
+  gap: 40px;
+}
+section.bowls article {
+  padding: 10px;
+}
+section.bowls h1 {
+  font-size: var(--reg);
+  color: var(--heading);
+  margin-bottom: 15px;
+}
+section.bowls span {
+  color: var(--dk-tertiary);
+  font-family: cursive;
+}
+section.bowls p {
+  color: var(--paragraph);
+}
+section.bowls img {
+  width: 200px;
+  animation: rotateClockwise 20s linear infinite;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 30px;
+  border-radius: 50%;
+}
+
+/*Md*/
+@media (min-width: 768px) {
+  section.bowls .container {
+    display: flex;
+    gap: 60px;
+  }
+  section.bowls article {
+    flex: 1;
+    margin: 5%;
+  }
+  section.bowls h1 {
+    font-size: var(--lg);
+    margin-bottom: 15px;
+  }
+  section.bowls span {
+    font-size: var(--sm);
+  }
+  section.bowls p {
+    font-size: var(--sm);
+  }
+  section.bowls img.one {
+    width: 30vw;
+    max-width: 400px;
+  }
+  section.bowls img.two {
+    width: 30vw;
+    max-width: 400px;
+    order: 2;
+  }
+}
+
+/*2xl*/
+@media (min-width: 1536px) {
+  section.bowls h1 {
+    font-size: var(--xl);
+    margin-bottom: 15px;
+  }
+  section.bowls span {
+    font-size: var(--base);
+  }
+  section.bowls p {
+    font-size: var(--md);
+  }
+  section.bowls img.one {
+    width: 30vw;
+    max-width: 600px;
+  }
+  section.bowls img.two {
+    width: 30vw;
+    max-width: 600px;
+    order: 2;
+  }
+}
