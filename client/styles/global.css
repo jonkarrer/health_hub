@@ -1,9 +1,9 @@
-@import url("./styles/components/header.css");
-@import url("./styles/components/button.css");
-@import url("./styles/components/wave.css");
-@import url("./styles/components/wrapper.css");
-@import url("./styles/components/section.css");
-@import url("./styles/components/footer.css");
+@import url("./components/header.css");
+@import url("./components/button.css");
+@import url("./components/wave.css");
+@import url("./components/wrapper.css");
+@import url("./components/section.css");
+@import url("./components/footer.css");
 
 * {
   margin: 0;

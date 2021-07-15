@@ -1,3 +1,6 @@
+#desktop {
+  display: none;
+}
 footer {
   height: 10vh;
   width: 100vw;
@@ -8,18 +11,15 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 footer .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
 }
-
 footer img {
   width: 36px;
 }
-
 footer .top_wave {
   background-image: url("../../assets/nav_wave/navbar_wave.svg");
   transform: rotate(180deg) translateY(90%);
@@ -30,18 +30,19 @@ footer .top_wave {
   #mobile {
     display: none;
   }
+  #desktop {
+    display: flex;
+  }
   footer {
     position: relative;
     height: 40vh;
   }
   footer .wrapper {
-    display: flex;
+    max-width: 1000px;
   }
   footer menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 30vh;
+    display: grid;
+    height: 170px;
   }
   footer h1 {
     font-size: var(--lg);
@@ -56,6 +57,7 @@ footer .top_wave {
     font-size: var(--sm);
   }
 }
+
 /*2xl*/
 @media (min-width: 1536px) {
   footer h1 {
@@ -66,5 +68,12 @@ footer .top_wave {
   }
   footer menu a {
     font-size: var(--base);
+  }
+  footer .wrapper {
+    max-width: 1500px;
+  }
+  footer menu {
+    display: grid;
+    height: 250px;
   }
 }

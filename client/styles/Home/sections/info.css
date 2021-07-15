@@ -25,14 +25,14 @@ section.info article p {
   padding: 15px;
 }
 section.info .image {
-  background-image: url("../../../assets/background/info.jpg");
+  background-image: url("../../../assets/Home/background/info.jpg");
   background-size: cover;
 }
 section.info .top_wave {
-  background-image: url("../../../assets/nav_wave/top_purple.svg");
+  background-image: url("../../../assets/wave/tops/top_purple.svg");
 }
 section.info .bottom_wave {
-  background-image: url("../../../assets/nav_wave/bottoms/white.svg");
+  background-image: url("../../../assets/wave/bottoms/white.svg");
   height: 10vw;
   bottom: -2px;
 }

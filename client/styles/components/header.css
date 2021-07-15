@@ -39,7 +39,7 @@ header .header_wave {
   top: 60px;
   width: 100vw;
   height: 8vw;
-  background-image: url("../../assets/nav_wave/navbar_wave.svg");
+  background-image: url("../../assets/wave/tops/navbar_wave.svg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;

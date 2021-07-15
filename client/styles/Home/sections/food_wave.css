@@ -1,16 +1,16 @@
 section.food_wave {
   position: relative;
-  background-image: url("../../../assets/section_2_img.jpg");
+  background-image: url("../../../assets/Home/background/food_wave.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 250px;
   padding: 0;
 }
 section.food_wave .top_wave {
-  background-image: url("../../../assets/nav_wave/white.svg");
+  background-image: url("../../../assets/wave/tops/white.svg");
 }
 section.food_wave .bottom_wave {
-  background-image: url("../../../assets/nav_wave/bottoms/purple.svg");
+  background-image: url("../../../assets/wave/bottoms/purple.svg");
 }
 section.food_wave .overlay {
   height: 100%;

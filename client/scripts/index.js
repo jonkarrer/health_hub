@@ -1,4 +1,4 @@
-import { toggleDarkMode } from "./modules/toggleDarkMode.js";
+import { toggleDarkMode } from "./utils/toggleDarkMode.js";
 
 document
   .getElementById("dark_mode_switch")

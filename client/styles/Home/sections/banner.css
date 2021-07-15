@@ -26,10 +26,10 @@ section.banner a {
   padding: 4px 10px;
 }
 section.banner .top_wave {
-  background-image: url("../../../assets/nav_wave/white.svg");
+  background-image: url("../../../assets/wave/tops/white.svg");
 }
 section.banner .bottom_wave {
-  background-image: url("../../../assets/nav_wave/navbar_wave.svg");
+  background-image: url("../../../assets/wave/tops/navbar_wave.svg");
   transform: rotate(180deg);
 }
 
